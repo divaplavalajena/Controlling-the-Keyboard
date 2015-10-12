@@ -9,6 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var textField: UITextField!
+    
+    @IBOutlet var label: UILabel!
+    
+    @IBAction func button(sender: AnyObject) {
+        
+        label.text = textField.text
+        
+    }
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
